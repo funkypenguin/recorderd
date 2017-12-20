@@ -38,7 +38,9 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY mosquitto.conf mosquitto.acl /etc/mosquitto/
 
 COPY recorder-health.sh /usr/local/sbin/recorder-health.sh
-HEALTHCHECK CMD /usr/local/sbin/recorder-health.sh
+
+# Disabled this, because it's breaking password-only access
+#HEALTHCHECK CMD /usr/local/sbin/recorder-health.sh
 
 RUN mkdir -p /var/log/supervisor && \
 	mkdir -p -m 775 /owntracks/recorder/store && \

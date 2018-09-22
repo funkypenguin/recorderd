@@ -2,6 +2,11 @@ FROM debian:jessie
 LABEL version="0.4" description="Mosquitto and OwnTracks Recorder"
 LABEL authors="Jan-Piet Mens <jpmens@gmail.com>, Giovanni Angoli <juzam76@gmail.com>"
 
+# BUILD_DATE and VCS_REF are immaterial, since this is a 2-stage build, but our build
+# hook won't work unless we specify the args
+ARG BUILD_DATE
+ARG VCS_REF
+
 ADD http://repo.owntracks.org/repo.owntracks.org.gpg.key /tmp/owntracks.gpg.key
 ADD http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key /tmp/mosquitto.gpg.key
 

@@ -7,6 +7,13 @@ LABEL authors="Jan-Piet Mens <jpmens@gmail.com>, Giovanni Angoli <juzam76@gmail.
 ARG BUILD_DATE
 ARG VCS_REF
 
+# Good docker practice, plus we get microbadger badges
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.vcs-url="https://github.com/funkypenguin/recorderd.git" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.schema-version="2.2-r1"
+
+
 ADD http://repo.owntracks.org/repo.owntracks.org.gpg.key /tmp/owntracks.gpg.key
 ADD http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key /tmp/mosquitto.gpg.key
 

@@ -1,9 +1,42 @@
-## Dockerfile for OwnTracks Recorder and Mosquitto
+[cookbookurl]: https://geek-cookbook.funkypenguin.co.nz
+[kitchenurl]: https://discourse.kitchen.funkypenguin.co.nz
+[discordurl]: http://chat.funkypenguin.co.nz
+[patreonurl]: https://patreon.com/funkypenguin
+[blogurl]: https://www.funkypenguin.co.nz
+[hub]: https://hub.docker.com/r/funkypenguin/owntracks/
 
-This is a Dockerfile for the [OwnTracks Recorder](https://github.com/owntracks/recorder) which includes the [Mosquitto broker](http://mosquitto.org) as well as the Recorder proper. Documentation for running this is in the [Booklet](http://owntracks.org/booklet/clients/recorder/).
+[![geek-cookbook](https://raw.githubusercontent.com/funkypenguin/www.funkypenguin.co.nz/master/images/geek-kitchen-banner.png)][cookbookurl]
 
-It sets Mosquitto broker (with TLS) as well as the OwnTracks Recorder for collecting [OwnTracks](http://owntracks.org) location data.
+# Contents
 
-Docker images are built automatically when we push Debian packages to the `recorder` repository, and these Docker images are available at [https://hub.docker.com/r/owntracks/recorderd/](https://hub.docker.com/r/owntracks/recorderd/).
+1. [What is funkypenguin/recorderd?](#what-is-funkypenguin-recorderd)
+2. [Why should I use this?](#why-should-i-use-this)
+3. [How do I use it?](#how-do-i-use-this)
+4. [CHANGELOG](#changelog)
 
-There's also a docker image based on alpine Linux with integrated MQTT for [Rpi and amd64 platforms](https://github.com/owntracks/recorder/issues/192).
+---
+
+This container is maintained by [Funky Penguin's Geek Cookbook][cookbookurl], a collection of "recipes" to run popular applications
+on Docker Swarm or Kubernetes, in a cheeky, geek format.
+
+Got more details at:
+* ![Discourse with us!](https://img.shields.io/discourse/https/discourse.geek-kitchen.funkypenguin.co.nz/topics.svg) [Forums][kitchenurl]
+* ![Chat with us!](https://img.shields.io/discord/396055506072109067.svg) [Friendly Discord Chat][discordurl]
+* ![Geek out with us!](https://img.shields.io/badge/recipies-35+-brightgreen.svg) [Funky Penguin's Geek Cookbook][cookbookurl]
+* ![Thank YOU](https://img.shields.io/badge/thank-you-brightgreen.svg) [Patreon][patreonurl]
+* ![Read blog!](https://img.shields.io/badge/read-blog-brightgreen.svg) [Blog][blogurl]
+
+---
+
+# What is funkypenguin/recorderd ?
+
+
+# Why should I use this?
+
+
+# How do I use this?
+
+# CHANGELOG
+
+
+

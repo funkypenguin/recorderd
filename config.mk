@@ -20,9 +20,6 @@ WITH_LUA ?= yes
 # Do you want support for the `pingping' monitoring feature?
 WITH_PING ?= yes
 
-# Do you want support for removing data via the API? (Dangerous)
-WITH_KILL ?= no
-
 # Do you want support for payload encryption with libsodium?
 # This requires WITH_LMDB to be configured.
 WITH_ENCRYPT ?= yes
